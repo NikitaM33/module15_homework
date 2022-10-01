@@ -1,0 +1,80 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #333;
+}
+
+.chat,
+.chat__msgArea {
+    border: 3px solid rgb(0, 255, 179);
+    border-radius: 5px;
+}
+
+.chat {
+    width: 30%;
+    padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+}
+
+.chat__send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.chat__send form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.chat__sendBtn,
+.chat__geo,
+.chat__input {
+    padding: 0.5rem;
+    border: 2px solid rgb(48, 48, 48);
+    border-radius: 5px;
+}
+
+.chat__input {
+    width: 60%;
+    outline: none;
+}
+
+.chat__sendBtn,
+.chat__geo {
+    background: rgb(81, 214, 174);
+    cursor: pointer;
+    transition: 0.3s all;
+    color: #222;
+}
+
+.chat__sendBtn:hover,
+.chat__geo:hover {
+    background: rgb(96, 252, 205);
+}
+
+.chat__msgArea {
+    height: 30rem;
+    padding: 1rem;
+}
+
+.msg {
+    max-width: 70%;
+    width: fit-content;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem 1rem;
+    background: rgb(145, 255, 222);
+    border-radius: 0.3rem;
+    color: #222;
+}
+
+.mySend {
+    margin: 0 0 0 auto;
+    background: rgb(34, 194, 146);
+}
